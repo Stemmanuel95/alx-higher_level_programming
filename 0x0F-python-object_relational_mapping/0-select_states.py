@@ -9,7 +9,7 @@ from sys import argv
 
 if __name__ == '__main__':
     """
-    Access to the database and get the states
+    Connects to the database and get extracts states
     from the database.
     """
     db_connect = MySQLdb.connect(
