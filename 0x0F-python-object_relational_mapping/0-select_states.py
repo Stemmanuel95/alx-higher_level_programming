@@ -1,8 +1,8 @@
 #!/usr/bin/python3
 """ Lists all states from database"""
-import MySQLdb
-from sys import argv
 
+from sys import argv
+import MySQLdb
 if __name == "__main__":
     username = argv[1]
     password = argv[2]
