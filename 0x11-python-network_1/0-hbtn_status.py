@@ -1,11 +1,11 @@
 #!/usr/bin/python3
-"""Script fetches https://alx-intranet.hbtn.io/status using urllib model."""
+"""Script Fetches the url https://alx-intranet.hbtn.io/status using the urllib model"""
 import urllib.request
 
 
 if __name__ == "__main__":
-    url_link = urllib.request.Request("https://alx-intranet.hbtn.io/status")
-    with urllib.url_link.urlopen(request) as response:
+    request = urllib.request.Request("https://alx-intranet.hbtn.io/status")
+    with urllib.request.urlopen(request) as response:
         body = response.read()
         print("Body response:")
         print("\t- type: {}".format(type(body)))
