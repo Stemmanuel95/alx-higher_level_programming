@@ -1,5 +1,4 @@
-#!/usr/bin/env python3
-for alphabet in range(ord('a'), ord('z')+1):
-    if chr(alphabet) in ['q', 'e']:
-        continue
-    print("{}".format(chr(alphabet)), end="")
+#!/usr/bin/python3
+for i in range(ord('a'), ord('z') + 1):
+    if chr(i) != 'e' and chr(i) != 'q':
+        print('{:c}'.format(i), end='')
