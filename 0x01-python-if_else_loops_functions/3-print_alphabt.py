@@ -1,7 +1,5 @@
 #!/usr/bin/env python3
-
-for alphabet in range(97, 123):
-    if chr(alphabet) in ['q', 'e']:
+for alphabet in range(ord('a'), ord('z')+1):
+    if alphabet == ord('q') or alphabet == ord('e'):
         continue
-    else:
-        print(chr(alphabet), end="")
+    print("{}".format(chr(alphabet)), end="")
