@@ -15,7 +15,7 @@ if __name__ == "__main__":
 
     db_cursor = db_connection.cursor()
 
-    db_cursor.execute("SELECT * FROM states")
+    db_cursor.execute("SELECT * FROM states ORDER BY states.id ASC")
 
     results_rows = db_cursor.fetchall()
 
