@@ -5,7 +5,7 @@ name starting with `N`
 from the database `hbtn_0e_0_usa`.
 """
 
-import MySQLdb 
+import MySQLdb
 from sys import argv
 
 """
@@ -14,8 +14,8 @@ from the database.
 """
 
 if __name__ == '__main__':
-    db_connection = db.connect(host="localhost", port=3306,
-                            user=argv[1], passwd=argv[2], db=argv[3])
+    db_connection = MySQLdb.connect(host="localhost", port=3306,
+                                    user=argv[1], passwd=argv[2], db=argv[3])
     db_cursor = db_connection.cursor()
 
     db_cursor.execute(
