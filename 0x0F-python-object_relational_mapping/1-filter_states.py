@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 
-import MySQLdb 
+import MySQLdb as db
 from sys import argv
 
 """
