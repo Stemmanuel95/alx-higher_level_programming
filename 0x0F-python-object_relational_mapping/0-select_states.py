@@ -8,8 +8,8 @@ if __name__ = "__main__":
     and lists all the states from the database"""
 
     db_connection = MySQLdb.connect(
-        host="localhost", user=sys.argv[1], passwd=sys.argv[2],
-        db=sys.argv[3], port=3306)
+        host="localhost", user=argv[1], passwd=argv[2],
+        db=argv[3], port=3306)
 
     db_cursor = db_connection.cursor()
 
