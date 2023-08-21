@@ -5,7 +5,7 @@ database hbtn_0e_0_usa"""
 import MySQLdb
 from sys import argv
 
-if __name__ = "__main__":
+if __name__ = '__main__':
     """This script connects to the mysql database
     and lists all the states from the database"""
 
