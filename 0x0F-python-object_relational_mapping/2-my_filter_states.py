@@ -14,9 +14,9 @@ if __name__ == '__main__':
     COnnects to the db and extract states
     from the database.
     """
-    db_connecton = db.connect(host="localhost", port=3306,
+    db_connect = db.connect(host="localhost", port=3306,
                             user=argv[1], passwd=argv[2], db=argv[3])
-    db_cursor = db_connection.cursor()
+    db_cursor = db_connect.cursor()
 
     db_cursor.execute(
         "SELECT * FROM states WHERE name LIKE BINARY '{}' ORDER BY \
